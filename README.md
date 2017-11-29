@@ -80,3 +80,10 @@ List of suitable example ercs. Please specify which output type it creates (map/
   4. (+) Output images are GeoTIFFs and has CRS information. Can be used directly to be overlayed on basemaps, if required!
   5. (+) Need to go through the text of the paper to find meaningful parameters which can be changed
   6. (+/-) Takes a long time to run completely (atleast >45 minutes) - Code can be edited to output the most relevant 2 or 3 maps.
+
+### Extracting and Enriching Ocean Biogeographic Information System
+
+* File: ./Extracting and Enriching Ocean Biogeographic Information System/Extracting and Enriching Ocean Biogeographic Information System.Rmd
+* Type of Output: Map
+* Comments:
+  1. Multiple maps are plotted in this Rmd file
