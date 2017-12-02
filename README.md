@@ -3,6 +3,8 @@ List of suitable example ercs. Please specify which output type it creates (map/
 
 ## ERC Summaries:
 
+`*` = Suitable
+
 ### Aquestiondrivenprocess
 
 * File: ./Aquestiondrivenprocess/server.R, ./Aquestiondrivenprocess/ui.R
@@ -18,7 +20,7 @@ List of suitable example ercs. Please specify which output type it creates (map/
   1. (-) Parameter #2 implemented as a dropdown! (this can be omitted)
   2. (+/-) Produces 6 timeseries plots
   3. (+) Shiny app works out of the box!
-  4. (-) Deals with reservoir operations (no prominent geospatial component)
+  4. (+/-) Deals with reservoir operations
 
 ### Aspacetimemodel
 
@@ -30,7 +32,7 @@ List of suitable example ercs. Please specify which output type it creates (map/
 * Parameter #1 Step size: 1
 * Parameter #1 Default Value: 30
 * Comments:
-  1. (-) The plotted map doesn't look interesting.
+  1. (-) The plotted map doesn't look interesting/suitable for this project.
   2. (+) Shiny Markdown works out of the box!
   3. (+) Deals with hurricane tracks
 
@@ -44,10 +46,9 @@ List of suitable example ercs. Please specify which output type it creates (map/
 * Parameter #1 Step size: NA
 * Parameter #1 Default Value: NA
 * Comments:
-  1. (-) Does not have a strong geospatial component.
-  2. (-) The plots (Fig. 2 & Fig. 3) are not a good timeseries for our project (only 7 observations)
-  3. (+/-) 5 data series in each plot
-  4. (-) It seems some functions are from packages which are not loaded in the Markdown.
+  1. (-) The plots (Fig. 2 & Fig. 3) are not a good timeseries for our project (only 7 observations)
+  2. (+/-) 5 data series in each plot
+  3. (-) It seems some functions are from packages which are not loaded in the Markdown.
 
 ### Dates and Times Made Easy with lubridate
 
@@ -59,12 +60,11 @@ List of suitable example ercs. Please specify which output type it creates (map/
 * Parameter #1 Step size: NA
 * Parameter #1 Default Value: NA
 * Comments:
-  1. (-) Probably not suitable - *illustrates* a particular package.
-  2. (-) Does not have a geospatial component.
+  1. (+/-) *Illustrates* a particular package.
   3. (+) Plot (Fig. 5) is a good time series
   4. (+) Has other time series plots too, but they are not probably what we are looking for.
 
-### LAND-SE a software for statistically based landslide
+### LAND-SE a software for statistically based landslide *
 
 * File: ./Original/LAND-SE-master/LAND-SE_v1r0b30_20160118.R, ./Original/LAND-SE-master/LAND-SE_v1r0b32_20160923.R
 * Type of Output: Map
@@ -80,6 +80,7 @@ List of suitable example ercs. Please specify which output type it creates (map/
   4. (+) Output images are GeoTIFFs and has CRS information. Can be used directly to be overlayed on basemaps, if required!
   5. (+) Need to go through the text of the paper to find meaningful parameters which can be changed
   6. (+/-) Takes a long time to run completely (atleast >45 minutes) - Code can be edited to output the most relevant 2 or 3 maps.
+  7. (+) Example data in the ERC as well as the code available online in GitHub at: maurorossi/LAND-SE
  * Description:
     Plots the landslide susceptibility zonation (how likely there will be a landslide in a given zone) of a region. It can be done on the basis of a region or on the basis of each pixel. The pixel-based analysis is computationally intensive and takes a lot of RAM (as per the author). However, the downside is that the primary output of interest ("./Reproduced/Example_datasets/pixel_Random_validation_entirearea/result_???_Model_Susceptibility_Map.tif") is not totally continious. So, instead we can use another output ("./Reproduced/Example_datasets/pixel_Random_validation_entirearea/result_???_Validation_Susceptibility_Map.tif") which validates the model. (??? represents the code for the algorithm used)
  * How the model works (filepaths corresponding to the region-wise implementation):
