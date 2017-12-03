@@ -93,3 +93,11 @@ List of suitable example ercs. Please specify which output type it creates (map/
 * Type of Output: Map
 * Comments:
   1. Multiple maps are plotted in this Rmd file
+
+### Automatic time series forecasting The forecast package for R
+
+* file: ./Automatic Time Series Forecasting The forecast package for R/Automatic Time Series Forecasting The forecast package for R/Automatic Time Series Forecasting The forecast package for R.R
+* Type of Output: Time series
+* Comments:
+  1. Contains multiple time series. Script needs to be edited to fit to our usecase (remove some plots)
+  2. Very small and simple script
